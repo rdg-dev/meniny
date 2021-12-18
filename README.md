@@ -1,5 +1,7 @@
 ## Install
- - git clone https://github.com/rdg-dev/meniny.git
+ ```bash
+ git clone https://github.com/rdg-dev/meniny.git
+ ```
  - run command in root directory: 
    ```bash
    composer install
