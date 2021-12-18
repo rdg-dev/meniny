@@ -1,13 +1,20 @@
 ## Install
  - git clone https://github.com/rdg-dev/meniny.git
  - run command in root directory: 
-  ```bash
-  composer install
-  ```
+   ```bash
+   composer install
+   ```
  - Rename file .env.example to .env in root directory and set db values
- - Create table namedays: php artisan migrate
- - insert records to table: php artisan name-days:update
-
+ - Create table namedays: 
+   ```bash
+   php artisan migrate
+   ```
+ - insert records to table: 
+   ```bash
+   php artisan name-days:update
+   ```
+   
+   
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
