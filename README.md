@@ -1,6 +1,7 @@
 ## Install
-
-Create .env file in root directory and set db values
+ - run command in root directory: composer install
+ - Create .env file in root directory and set db values
+ - insert records to table: php artisan name-days:update
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
