@@ -23,7 +23,7 @@
    ```bash
    php artisan name-days:update
    ```
-   - Run php server
-     ```bash
-     php artisan serve
-     ```
+ - Run php server
+   ```bash
+   php artisan serve
+   ```
