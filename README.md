@@ -1,6 +1,8 @@
 ## Install
- - run command in root directory: composer install
- - Create .env file in root directory and set db values
+ - git clone https://github.com/rdg-dev/meniny.git
+ - run command in root directory: **composer install
+ - Rename file .env.example to .env in root directory and set db values
+ - Create table namedays: php artisan migrate
  - insert records to table: php artisan name-days:update
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
