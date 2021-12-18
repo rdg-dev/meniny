@@ -1,6 +1,9 @@
 ## Install
  - git clone https://github.com/rdg-dev/meniny.git
- - run command in root directory: **composer install
+ - run command in root directory: 
+  ```bash
+  composer install
+  ```
  - Rename file .env.example to .env in root directory and set db values
  - Create table namedays: php artisan migrate
  - insert records to table: php artisan name-days:update
