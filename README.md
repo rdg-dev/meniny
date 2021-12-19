@@ -8,12 +8,14 @@
    ```
  - Rename file .env.example to .env in root directory and set db values
    ```bash
+   ...
    DB_CONNECTION=mysql
    DB_HOST=localhost
    DB_PORT=3306
    DB_DATABASE=*** db-name ***
    DB_USERNAME=*** db-user ***
    DB_PASSWORD=*** db-password ***
+   ...
    ```
  - Create table namedays: 
    ```bash
