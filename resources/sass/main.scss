@@ -1,0 +1,21 @@
+
+body {
+    margin-top: 50px;
+    position: relative;
+}
+.search {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    .search-cont {
+        position: relative;
+        i {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+        }
+        input {
+            padding-left: 35px;
+        }
+    }
+}  

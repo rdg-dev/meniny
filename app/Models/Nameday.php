@@ -13,7 +13,7 @@ class Nameday extends Model
         'name', 'month', 'day'
     ];
 
-    public static function getNameDay($val)
+    public static function getNameDayByDate($val)
     {
         $val = explode('-', $val);
         
@@ -21,4 +21,9 @@ class Nameday extends Model
             ->where('day', $val[1])
             ->value('name');
     }
+
+    public static function getNameDayByName($val)
+    {
+        return Nameday::where('name', 'like', '%' . $val . '%');
+    }    
 }

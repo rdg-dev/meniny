@@ -1,7 +1,8 @@
 @extends('main')
 
 @section('content')
-
-<p>Dnes je {{ $todayName }} {{ $today }}. Meniny má <b>{{ $nameday }}</b>.</p>
-
+    <p>
+        Dnes je <b>{{ $todayName }} {{ $today }}</b><br>
+        Meniny má <b>{{ $nameday }}</b>
+    </p>
 @endsection

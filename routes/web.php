@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,10 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+Route::group(['prefix' => 'api'], function () {
+    Route::get('/search/{searchValue}', [SearchController::class, 'index'])->name('search');
+});
+
+
+Route::get('/{name}', [HomeController::class, 'show'])->name('nameday');
 Route::get('/', [HomeController::class, 'index'])->name('homepage');

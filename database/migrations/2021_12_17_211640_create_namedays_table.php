@@ -18,7 +18,7 @@ class CreateNamedaysTable extends Migration
             $table->tinyInteger('day');
             $table->tinyInteger('month');
             $table->string('name', 50);
-            $table->timestamps();
+            $table->timestamp('created_at');
         });
     }
 

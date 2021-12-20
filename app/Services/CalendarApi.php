@@ -15,14 +15,45 @@ class CalendarApi
 
     /**
      *
-     * Get nameday
+     * Get nameday by date
      *
      * @param string $format 'xx-yy' xx -> month, yy -> day
      * @return string
      *
      */    
-    public static function getNameDay( $val )
+    public static function getNameDayByDate( $strDate )
     {
-        return Nameday::getNameDay( $val );
+        return Nameday::getNameDayByDate( $strDate );
     } 
+
+    /**
+     *
+     * Get nameday by name
+     *
+     * @param string
+     * @return Eloquent\Builder
+     *
+     */     
+    public static function searchByName( $searchValue )
+    {
+        return Nameday::getNameDayByName( $searchValue );
+    }
+
+    /**
+     *
+     * Get month name
+     *
+     * @param integer $format number month
+     * @return string
+     *
+     */     
+    public static function getNameMonth( $numMonth )
+    {
+        $months = [
+            'Január', 'Február', 'Marec', 'Apríl', 
+            'Máj', 'Jún', 'Júl', 'August', 'September', 
+            'Október', 'November', 'December'
+        ];
+        return $months[$numMonth - 1];
+    }    
 }
