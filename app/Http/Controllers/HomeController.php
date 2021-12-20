@@ -20,6 +20,7 @@ class HomeController extends Controller
     {
         $name = str_replace('-', ', ', $name);
         $nameday = CalendarApi::searchByName($name)->first();
+        if (!$nameday) abort(404);
         $month = CalendarApi::getNameMonth($nameday->month);
 
         return view('home.show',[
