@@ -6,7 +6,7 @@
    ```bash
    composer install
    ```
- - Rename file .env.example to .env in root directory and set db values
+ - Copy file .env.example to .env in root directory and set db values
    ```bash
    ...
    DB_CONNECTION=mysql
